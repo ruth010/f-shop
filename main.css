@@ -19,13 +19,23 @@ ul {
     list-style-type: none;
 }
 
+.center {
+    text-align: center;
+}
+
+.end-row {
+    margin: 25px 105px;
+    border: none;
+}
+
 .end-sec {
     margin: 25px 105px;
     border: 0;
     border-top: 1px solid #eee;
 }
 
-/* HEADER SECTION*/
+
+/* HEADER SECTION_______________________________________________________________________________________________*/
 
 /* header {
     position: relative;
@@ -50,8 +60,10 @@ ul {
 .top-bar__logo {
     font-size: 2em;
     font-weight: 300;
-    /* color: #f30000; */
-    color: #333;
+}
+
+.top-bar__logo:hover {
+    font-weight: 400;
 }
 
 .top-bar__menu {
@@ -59,25 +71,18 @@ ul {
     justify-content: center;
     
     list-style-type: none;
-
-    font-size: 0.8em;
-    font-weight: 300;
 }
 
 .top-bar__menu li {
-    margin-right: 25px;
+    margin-right: 30px;
+
+    font-size: 1.1em;
+    font-weight: 300;
 }
 
-.top-bar__menu li a {
-    text-decoration: none;
-    font-size: 1.5em;
-
-    color: #333;
+.top-bar__menu li a:hover {
+    font-weight: 400;
 }
-
-/* .top-bar__menu li a:hover {
-    color: red;
-} */
 
 .top-bar__links {
     display: flex;
@@ -220,30 +225,11 @@ ul {
 }
 
 
- 
-/* FOOTER */
-
-.infor {
-    padding: 10px 0;
+/* COLLECTION________________________________________ */
+.collection {
+    margin-top: 30px;
 }
 
-.infor__detail h3 {
-    font-size: 0.9em;
-    font-weight: 600;
-}
-
-.infor__detail ul {
-    padding-top: 8px;
-}
-
-.infor__detail li {
-    padding: 3px 0;
-
-    font-size: 0.9em;
-    font-weight: 300;
-}
-
-/* ----------------------------------------------------------------------------------------------- */
 
 /* NEW ITEMS SECTION________________________________________ */
 
@@ -273,6 +259,17 @@ ul {
 
 .item__title-price {
     font-size: 1.2em;
+    font-weight: 300;
+}
+
+.item__title-price-sale {
+    font-size: 1.2em;
+    font-weight: 300;
+    color:#f00;
+}
+
+.item__title-price-compare {
+    font-size: 1em;
     font-weight: 300;
 }
 
@@ -313,4 +310,34 @@ ul {
     background: none;
 
     font-size: 1em;
+}
+
+/* FOOTER____________________________________________________________________________________________________ */
+
+.infor {
+    padding: 25px 0;
+}
+
+
+.infor__detail h3 {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.infor__detail ul {
+    padding-top: 8px;
+}
+
+.infor__detail li {
+    padding: 3px 0;
+
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.bottom-bar__content {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 0.7em;
 }

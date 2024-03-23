@@ -27,11 +27,12 @@
         <script>
             // Function to load content based on hash
             function loadContent() {
-                const hash = window.location.hash.substr(1); // Get hash without '#'
+                // const url = window.location.hash.substr(1); // Get hash without '#'
                 const main = document.querySelector('main'); // Select the first <main> element
-    
+                const hash = window.location.hash.substr(1) || 'home';
+
                 // Load content based on hash
-                if (hash === 'home') {
+                if (hash === 'home' || !hash) {
                     fetch('./components/home.html') // Fetch home.html
                         .then(response => response.text())
                         .then(html => main.innerHTML = html);
@@ -66,11 +67,10 @@
                 }
             }
     
+            window.onload = loadContent;
+
             // Listen for hash change events
             window.onhashchange = loadContent;
-    
-            // Call loadContent initially to load content based on current hash
-            loadContent();
             
         </script>
     </main>
